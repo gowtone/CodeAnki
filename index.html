@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>プログラミング暗記帳</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main class="app">
+        <h1 class="title">プログラミング暗記帳</h1>
+
+        <!-- 登録 -->
+        <section class="panel">
+            <h2 class="panel-title">カードを登録</h2>
+            <div class="form">
+                <select id="tagInput">
+                    <option value="HTML">HTML</option>
+                    <option value="CSS">CSS</option>
+                    <option value="JavaScript">JavaScript</option>
+                    <option value="jQuery">jQuery</option>
+                </select>
+                <input type="text" id="questionInput" placeholder="問題（例：localStorageに保存する命令は？）">
+                <textarea id="answerInput" placeholder="答え（例：localStorage.setItem(キー, 値)）"></textarea>
+                <button id="addBtn" class="btn">追加</button>
+                <button id="cancelBtn" class="btn btn-sub">キャンセル</button>
+            </div>
+        </section>
+
+        <!-- 出題 -->
+        <section class="panel">
+            <h2 class="panel-title">出題</h2>
+            <div class="quiz">
+                <p class="quiz-tag"></p>
+                <p class="quiz-question">「出題する」を押してね</p>
+                <pre class="quiz-answer"></pre>
+            </div>
+            <div class="buttons">
+                <button id="quizBtn" class="btn">出題する</button>
+                <button id="showBtn" class="btn btn-sub">答えを見る</button>
+            </div>
+        </section>
+
+        <!-- 一覧 -->
+        <section class="panel">
+            <h2 class="panel-title">カード一覧（<span id="count">0</span>枚）</h2>
+            <select id="filter">
+                <option value="すべて">すべて</option>
+                <option value="HTML">HTML</option>
+                <option value="CSS">CSS</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="jQuery">jQuery</option>
+            </select>
+            <ul id="cardList"></ul>
+        </section>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,187 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #efe8e7;
+  font-family: sans-serif;
+  color: #3a3232;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 32px 16px;
+}
+
+.title {
+  text-align: center;
+  color: #3a3232;
+  font-size: 28px;
+}
+
+/* ===== 白い箱 ===== */
+.panel {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.panel-title {
+  font-size: 18px;
+}
+
+/* ===== 入力欄 ===== */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+input,
+textarea,
+select {
+  padding: 10px;
+  font-size: 16px;
+  color: #3a3232;
+  background-color: #ffffff;
+  border: 1px solid #d8cbca;
+  border-radius: 8px;
+}
+
+textarea {
+  height: 80px;
+  font-family: monospace;
+}
+
+/* ===== ボタン ===== */
+.buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #5c4b4b;
+  border: 2px solid #5c4b4b;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.btn-sub {
+  color: #5c4b4b;
+  background-color: #ffffff;
+}
+
+/* ===== 出題 ===== */
+.quiz {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-height: 120px;
+  padding: 16px;
+  background-color: #f6efee;
+  border-radius: 12px;
+}
+
+.quiz-tag {
+  font-size: 12px;
+  font-weight: bold;
+  color: #8c7777;
+}
+
+.quiz-question {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* ===== コードの表示 ===== */
+pre {
+  padding: 10px;
+  font-family: monospace;
+  font-size: 14px;
+  white-space: pre-wrap;   /* 長い行を折り返す */
+  background-color: #3d3333;
+  color: #f3eaea;
+  border-radius: 8px;
+}
+
+.quiz-answer {
+  display: none;           /* 最初は答えを隠す */
+}
+
+/* ===== 一覧 ===== */
+#cardList {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  list-style: none;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 12px;
+  border: 1px solid #e6dbda;
+  border-radius: 12px;
+}
+
+.card-tag {
+  align-self: flex-start;
+  padding: 2px 8px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #8c7777;
+  border-radius: 999px;
+}
+
+.card-question {
+  font-weight: bold;
+}
+
+summary {
+  font-size: 14px;
+  color: #7c6767;
+  cursor: pointer;
+}
+
+/* ===== 編集・削除 ===== */
+#cancelBtn {
+  display: none;           /* 編集中だけ表示する */
+}
+
+.card-actions {
+  display: flex;
+  gap: 8px;
+  align-self: flex-end;    /* カードの右下に寄せる */
+}
+
+.card-btn {
+  padding: 4px 12px;
+  font-size: 13px;
+  color: #5c4b4b;
+  background-color: #ffffff;
+  border: 1px solid #d8cbca;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.delete-btn {
+  color: #ffffff;
+  background-color: #9e8484;
+  border-color: #9e8484;
+}
