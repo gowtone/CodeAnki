@@ -10,7 +10,7 @@
 - カードは1枚ずつ編集・削除できます。
 
 ## ③アプリのデプロイURL
-https://gowtone.github.io/（リポジトリ名）/
+https://gowtone.github.io/CodeAnki/
 
 ## ④アプリのログイン用IDまたはPassword（ある場合）
 - なし
